@@ -51,11 +51,11 @@ h1 span,.big-copy{font-family:"Instrument Serif",Georgia,serif;font-weight:400;f
 .button:hover{transform:translateY(-2px);filter:brightness(1.06);box-shadow:0 22px 80px rgba(214,168,79,.28),0 16px 70px rgba(164,139,255,.34)}
 .micro{font-size:14px;color:var(--muted);margin:0}
 .hero-art{position:relative;height:min(72vh,700px);min-height:520px}
-.photo{position:absolute;border:1px solid var(--line);border-radius:28px;background-size:cover;background-position:center;box-shadow:0 35px 90px rgba(0,0,0,.34);filter:saturate(.85) contrast(1.02)}
+.photo{position:absolute;border:1px solid var(--line);border-radius:28px;background-size:cover;background-position:center;box-shadow:0 35px 90px rgba(0,0,0,.34);filter:saturate(.92) contrast(1.04)}
 .photo:after{content:"";position:absolute;inset:0;border-radius:inherit;background:linear-gradient(140deg, rgba(164,139,255,.35), rgba(21,19,24,.22))}
-.photo-a{width:68%;height:62%;right:2%;top:4%;background-image:url('https://images.unsplash.com/photo-1498842812179-c81beecf902c?auto=format&fit=crop&w=1200&q=80')}
-.photo-b{width:54%;height:46%;left:0;bottom:3%;background-image:url('https://images.unsplash.com/photo-1526047932273-341f2a7631f9?auto=format&fit=crop&w=1000&q=80')}
-.photo-c{width:38%;height:34%;right:12%;bottom:0;background-image:url('https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=900&q=80')}
+.photo-a{width:68%;height:62%;right:2%;top:4%;background-image:url('https://images.pexels.com/photos/7309930/pexels-photo-7309930.jpeg?auto=compress&cs=tinysrgb&w=1400')}
+.photo-b{width:54%;height:46%;left:0;bottom:3%;background-image:url('https://images.pexels.com/photos/7289723/pexels-photo-7289723.jpeg?auto=compress&cs=tinysrgb&w=1100')}
+.photo-c{width:38%;height:34%;right:12%;bottom:0;background-image:url('https://images.pexels.com/photos/8370744/pexels-photo-8370744.jpeg?auto=compress&cs=tinysrgb&w=900')}
 .sticker{position:absolute;z-index:4;background:var(--accent);color:var(--cream);border:1px solid var(--line);border-radius:999px;padding:10px 14px;font-weight:900;font-size:13px;box-shadow:0 15px 40px rgba(0,0,0,.22)}
 .sticker-one{top:16%;left:3%;transform:rotate(-7deg)}.sticker-two{right:0;top:54%;transform:rotate(5deg);background:var(--accent-3)}.sticker-three{left:27%;bottom:14%;transform:rotate(-3deg);background:var(--gold);color:#1a1613}
 .about{display:grid;grid-template-columns:.9fr 1.1fr;gap:42px;border-top:1px solid var(--line)}

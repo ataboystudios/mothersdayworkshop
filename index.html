@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Made With Intention | Mother’s Day Workshop</title>
+  <meta name="description" content="A Mother’s Day workshop by Ataboy Studios for the ones who make everything feel like home." />
+
+  <meta property="og:title" content="Made With Intention | Mother’s Day Workshop" />
+  <meta property="og:description" content="A hands-on creative workshop for the ones who make everything feel like home." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="/assets/mothers-day-og.jpg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <nav class="nav" aria-label="Main navigation">
+    <a class="brand brand-wordmark" href="#top" aria-label="Ataboy Studios Mother’s Day Workshop">
+      <img src="assets/ataboy-logo.svg" alt="Ataboy Studios" class="brand-logo" />
+    </a>
+    <a class="nav-cta" href="#register">Save My Spot</a>
+  </nav>
+
+  <main id="top">
+    <section class="hero section purple-hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Mother’s Day Workshop · Ataboy Studios</p>
+        <h1>
+          Made with<br>
+          <span class="hero-accent">Intention</span>
+        </h1>
+        <p class="hero-lede">A hands-on creative workshop for the ones who make everything feel like home.</p>
+
+        <div class="hero-actions">
+          <a class="button" href="#register">Save My Spot</a>
+          <p class="micro">Limited seats · May XX · Location TBD</p>
+        </div>
+      </div>
+
+      <div class="hero-art" aria-label="Workshop image collage">
+        <div class="photo photo-a"></div>
+        <div class="photo photo-b"></div>
+        <div class="photo photo-c"></div>
+        <div class="sticker sticker-one">For Mom</div>
+        <div class="sticker sticker-two">Made by hand</div>
+        <div class="sticker sticker-three">No clichés, promise.</div>
+      </div>
+    </section>
+
+    <section class="about section">
+      <div class="section-heading">
+        <p class="eyebrow">The idea</p>
+        <h2>Not another brunch.</h2>
+      </div>
+
+      <p class="big-copy">A workshop built around care, craft, and the people who deserve more than a last-minute card.</p>
+
+      <div class="cards">
+        <article class="card">
+          <h3>Make</h3>
+          <p>Create something personal, tactile, and very much not from a checkout aisle.</p>
+        </article>
+
+        <article class="card">
+          <h3>Connect</h3>
+          <p>Bring your mom, your kid, your friend, or just yourself. All count.</p>
+        </article>
+
+        <article class="card">
+          <h3>Leave with</h3>
+          <p>Something beautiful. And probably a story.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="details section">
+      <p class="eyebrow">The details</p>
+
+      <div class="detail-grid">
+        <div class="detail">
+          <span>Date</span>
+          <strong>Sunday, May XX</strong>
+        </div>
+
+        <div class="detail">
+          <span>Time</span>
+          <strong>XX:XX AM – XX:XX PM</strong>
+        </div>
+
+        <div class="detail">
+          <span>Location</span>
+          <strong>Ataboy Studios / TBD</strong>
+        </div>
+
+        <div class="detail">
+          <span>Spots</span>
+          <strong>Limited capacity</strong>
+        </div>
+      </div>
+    </section>
+
+    <section id="register" class="register section">
+      <div class="form-intro">
+        <p class="eyebrow">Register</p>
+        <h2>Save your spot.</h2>
+        <p>We’ll take care of the rest.</p>
+      </div>
+
+      <form id="workshopForm" class="form" method="POST">
+        <input type="hidden" name="source" value="Ataboy Mothers Day Landing Page" />
+        <input type="hidden" name="workshop" value="Made with Intention - Mother’s Day Workshop" />
+        <input type="hidden" name="utm_source" id="utm_source" />
+        <input type="hidden" name="utm_medium" id="utm_medium" />
+        <input type="hidden" name="utm_campaign" id="utm_campaign" />
+
+        <label>
+          <span>Full Name</span>
+          <input required name="full_name" type="text" autocomplete="name" placeholder="Jane Smith" />
+        </label>
+
+        <label>
+          <span>Email</span>
+          <input required name="email" type="email" autocomplete="email" placeholder="jane@email.com" />
+        </label>
+
+        <label>
+          <span>Phone <em>optional</em></span>
+          <input name="phone" type="tel" autocomplete="tel" placeholder="(555) 555-5555" />
+        </label>
+
+        <label>
+          <span>Who are you coming with?</span>
+          <select required name="coming_with">
+            <option value="" disabled selected>Pick one</option>
+            <option>Just me</option>
+            <option>My mom</option>
+            <option>My kids</option>
+            <option>A friend</option>
+            <option>A small crew</option>
+          </select>
+        </label>
+
+        <label class="full">
+          <span>Who are you doing this for?</span>
+          <textarea required name="doing_this_for" rows="3" placeholder="Tell us the good stuff."></textarea>
+        </label>
+
+        <label class="full">
+          <span>Anything we should know?</span>
+          <textarea name="notes" rows="3" placeholder="Dietary, accessibility, allergies, timing, etc."></textarea>
+        </label>
+
+        <button class="button full" type="submit">Let’s do this</button>
+        <p id="formStatus" class="status" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Ataboy Studios</p>
+    <p>Craft over everything.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
